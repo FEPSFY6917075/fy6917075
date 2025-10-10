@@ -112,13 +112,14 @@ body {
 
 
 
-     
+    <pre id="intro"> 
 It is, in short, when the Higgs boson is in a false vacuum and begins quantum tunnelling
     to reach its actual vacuum state starting a chain reaction that consumes and destroys
     the entire universe.
 But how does it get to be this way, and can we prevent it?
      
 Let’s begin with these two basic principles of the universe.
+    </pre>
 <hr>
 
 
@@ -131,13 +132,14 @@ Let’s begin with these two basic principles of the universe.
 <head<b><h1 id="Energylevels"><u><p style="font-size: 42.067px;">Energy levels </p></u></h1></head>
 
      
-     
+     <pre id="energylevels2">
 Everything has an energy level, the higher the level the more energy a system has. Take for
     example some petrol, it has a very high energy level, largely stored in chemical energy.
     When it is burned it releases almost all the energy stored in its molecular bonds,
     transferring it into heat energy, releasing high energy photons as the electrons shift
     between energy levels. This reaction produces mainly ash, of which has a very low energy
     level and hence a very low potential energy. 
+     </pre>
 <hr>
 
 
@@ -149,7 +151,7 @@ Everything has an energy level, the higher the level the more energy a system ha
 <head<b><h1 id="Stability"><u><p style="font-size: 42.067px;"> Stability</u></h1></head>
 
      
-     
+     <pre id="stability2">
 All things in the universe no matter the size, will try to move to its ground state; where
     it is completely stable and has as little energy as possible. Imagine a cricket ball balanced
     at the top of a mountain, the cricket ball has a lot of potential energy and is very unstable.
@@ -157,6 +159,7 @@ All things in the universe no matter the size, will try to move to its ground st
     back to the wood; it being unstable and hence burning when energy is provided to it. The ash is
     very stable; you can transfer energy to it and nothing significant will happen.
 Let’s go a little bit smaller into the realm of fundamental particles and various types of vacuums.
+     </pre>
 <hr>
 
 
@@ -168,7 +171,7 @@ Let’s go a little bit smaller into the realm of fundamental particles and vari
 <head<b><h1 id="Vacuumstates"><u><p style="font-size: 42.067px;">Vacuum states</u></h1></head>
 
      
-
+<pre id="Vacuum_states">
 All particles want to be in their vacuum state, where they have as little energy as possible and are
   very stable. All particles except the Higgs boson are in their vacuum state. The Higgs boson is the
   wave in the Higgs field which dictates how all other particles interact with one another by giving
@@ -176,6 +179,7 @@ All particles want to be in their vacuum state, where they have as little energy
   it and hence doesn’t have mass, moving up to electrons which have a small mass and hence react lightly
   with the field, and then the top quark which reacts strongest and hence has the most mass of any
   fundamental particle. However, it is highly likely that the Higgs boson is in a false vacuum.
+</pre>
 <hr>
 
 
@@ -188,10 +192,11 @@ All particles want to be in their vacuum state, where they have as little energy
 <head<b><h1 id="Falsevacuum"><u><p style="font-size: 42.067px;">false vacuum</u></h1></head>
 
      
-    
+    <pre id="False_vacuum">
 So, what if the Higgs boson was in fact in a false vacuum? This means that it has not reached its
     lowest energy state and hence still has potential energy. This means that there is a barrier
     holding it back. A random spark like quantum tunnelling, could release the potential energy.
+    </pre>
 <hr>
 
 
@@ -202,7 +207,7 @@ So, what if the Higgs boson was in fact in a false vacuum? This means that it ha
   
 <head<b><h1 id="Quantumtunnelling><u><p style="font-size: 42.067px;">Quantum tunnelling</u></h1></head> 
      
-
+<pre id="Quantum_tunneling">
     Imagine a ball rolling across a surface with a E<sub>k</sub> of 50J reaching a hill at which
   the peak would have a potential energy of 20J, the ball would easily go up the hill and continue
   as it only needs 20J to reach the summit. But what if the summit has a potential energy of 100J
@@ -222,6 +227,7 @@ when the height and the width of the barrier is infinite then the wave packet wi
   the amount of the wave packet that can pass through the barrier varies. This can theoretically
   ONLY can happen to the fundamental particles and never molecules or even structures as they cannot
   be created by a single single field. So you can’t run through a wall feel free to give it a try though.
+</pre>
 <hr>
 
 
@@ -233,7 +239,7 @@ when the height and the width of the barrier is infinite then the wave packet wi
 <head<b><h1 id="Vacuumdecay"><u><p style="font-size: 42.067px;">Vacuum decay </p></u></h1></head>
 
 
-
+<pre id="Vacuum_decay">
 Now that it has started moving it cannot be stopped. As the Higgs field crashes into the lower energy
   state, it releases a massive amount of potential energy which sets of a chain reaction of quantum
   tunnelling of other Higgs bosons creating a sphere of a new stable Higgs field/true vacuum which
@@ -245,9 +251,10 @@ Now that it has started moving it cannot be stopped. As the Higgs field crashes 
   it impossible!
 Thankfully this outcome is only based on our current knowledge of the universe which is always
   changing and as It is it, vacuum decay is one of the more unlikely ways the universe will end.
+  </pre>
      <hr style="height:40px;border-width:0;color:gray;background-color:GoldenRod">
      
-  </pre>
+  
 </html>
 
      <body>
@@ -265,6 +272,10 @@ button.style.backgroundColor = randomColor;
 // Add a click event listener to the button
 button.addEventListener("click", changeColor);
 </script>
+
+
+
+       
 
        
 <!-- Last commit time display -->
@@ -313,6 +324,14 @@ button.addEventListener("click", changeColor);
     window.onload = getLastUpdatedTime;
 </script>
 
+
+
+
+
+
+
+       
+
        <!-- Placeholder for total word count -->
 <p id="totalWordCount"></p>
 <hr>
@@ -331,10 +350,15 @@ button.addEventListener("click", changeColor);
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const IntroductionCount = displayWordCount("Introduction_InText");
-    const AnalysisCount = displayWordCount("Analysis_InText");
+    const IntroductionCount = displayWordCount("intro");
+    const energylevels2Count = displayWordCount("energylevels2");
+    const stability2Count = displayWordCount("stability2");
+     const Vacuum_statesCount = displayWordCount("Vacuum_states");
+     const False_vacuumCount = displayWordCount("False_vacuum");
+    const Quantum_tunnelingCount = displayWordCount("Quantum_tunneling");
+    const Vacuum_decayCount = displayWordCount("Vacuum_decay");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount;
+    const totalWordCount = IntroductionCount + energylevels2Count + stability2Count + Vacuum_statesCount + False_vacuumCount + Quantum_tunnelingCount + Vacuum_decayCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
